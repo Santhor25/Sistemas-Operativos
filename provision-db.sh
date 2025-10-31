@@ -52,7 +52,7 @@ ALTER TABLE empleados OWNER TO vagrant;
 
 EOF
 
-# 🔧 Configurar PostgreSQL para aceptar conexiones remotas
+# Configurar PostgreSQL para aceptar conexiones remotas
 PG_CONF="/etc/postgresql/12/main/postgresql.conf"
 HBA_CONF="/etc/postgresql/12/main/pg_hba.conf"
 
