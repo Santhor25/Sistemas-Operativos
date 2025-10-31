@@ -7,6 +7,7 @@ Se crean 2 maquinas virtuales (web y db) con **Vagrant + VirtualBox** y se provi
 - **db** : 192.168.56.11
 
 ## Como Ejecutar
+```bash
 git clone https://github.com/Santhor25/Sistemas-Operativos.git
 cd vagrant-web
 vagrant up
