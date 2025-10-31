@@ -11,7 +11,7 @@ $password = "vagrant";
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
 
 if (!$conn) {
-  die("<p style='color:red;'>❌ Error al conectar a la base de datos.</p>");
+  die("<p style='color:red;'> Error al conectar a la base de datos.</p>");
 }
 
 echo "<p style='color:green;'>Conexión exitosa a PostgreSQL</p>";
@@ -21,7 +21,7 @@ $query = "SELECT * FROM empleados";
 $result = pg_query($conn, $query);
 
 if (!$result) {
-  die("<p style='color:red;'>⚠️ Error en la consulta: " . pg_last_error($conn) . "</p>");
+  die("<p style='color:red;'> Error en la consulta: " . pg_last_error($conn) . "</p>");
 }
 
 echo "<table border='1' cellpadding='5' cellspacing='0'>";
